@@ -22,13 +22,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT="lge/m4_open_eu/m4:4.1.2/JZO54K/E61020c-EUR-XX.1367460723:user/release-keys" \
     PRIVATE_BUILD_DESC="m4_open_eu-user 4.1.2 JZO54K E61020c-EUR-XX.1367460723 release-keys"
 
+# Set up the product codename, build version & MOTD.
+PRODUCT_CODENAME := optimus l5
+
 PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank you for choosing Evervolv for your LGE E610\nPlease visit us at \#evervolv on irc.freenode.net\nFollow @preludedrew for the latest Evervolv updates\nGet the latest rom at evervolv.com\n------------------------------------------------\n"
 
 # Copy compatible prebuilt files
-#PRODUCT_COPY_FILES += \
-# vendor/ev/prebuilt/hvga/media/bootanimation.zip:system/media/bootanimation.zip
-
-
+PRODUCT_COPY_FILES += \
+    vendor/ev/prebuilt/hvga/media/bootanimation.zip:system/media/bootanimation.zip
 
 
 
